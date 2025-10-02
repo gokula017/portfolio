@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gokul Choudhary — Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Gokul Choudhary — Frontend & MERN projects: MyShop (Redux Toolkit), Employee Resume Directory (EJS + Node), ToDo App (MERN), and more." />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">GC</div>
+      <div>
+        <h1>Gokul Choudhary</h1>
+        <p class="lead">React.js Frontend Developer with 8 years in UI development and 3 years in React — exploring full
+          MERN stack to build end-to-end applications.</p>
+
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2 style="margin-top:0">Projects</h2>
+        <div class="projects">
+
+          <article class="project">
+            <h3>MyShop — (React + Redux Toolkit)</h3>
+            <p class="small">E‑commerce cart demo with persistent cart, order flow, and price calculations.</p>
+            <div class="tech" aria-hidden>
+              <span class="tag">React</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">LocalStorage</span>
+              <span class="tag">GitHub Pages</span>
+            </div>
+            <p style="margin-top:10px">Features: add/remove items, increase/decrease quantity, per-item total, final
+              amount, "Place Order" clears cart and shows confirmation. Cart persists via Local Storage.</p>
+            <div class="row">
+              <button class="btn" onclick="openLink('https://gokula017.github.io/redux-rtk/')">View Live</button>
+              <button class="ghost" onclick="openRepo('https://github.com/gokula017/resume')">View Repo</button>
+              <button class="ghost" onclick="copyToClipboard('https://gokula017.github.io/redux-rtk/')">Copy
+                Link</button>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>Employee Resume Directory — (Node, Express, EJS, MongoDB)</h3>
+            <p class="small">Server-rendered directory for managing candidate resumes and files.</p>
+            <div class="tech">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">EJS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <p style="margin-top:10px">Features: CRUD for employee records, pagination for large datasets, resume
+              download functionality. Server-rendered UI using EJS templates.</p>
+            <div class="row">
+              <button class="btn" onclick="openLink('https://resume-directory.onrender.com/')">View Live</button>
+              <button class="ghost" onclick="openRepo('https://github.com/gokula017/resume')">View Repo</button>
+              <button class="ghost" onclick="copyToClipboard('https://resume-directory.onrender.com/')">Copy
+                Link</button>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>ToDo App — (MERN)</h3>
+            <p class="small">Full-stack ToDo application with authentication and task management.</p>
+            <div class="tech">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <p style="margin-top:10px">Features: JWT authentication, CRUD for tasks, reusable React components using
+              Hooks & Context, deployed to production.</p>
+            <div class="row">
+              <button class="btn " onclick="openLink('https://todo-app-931h.onrender.com/')">View Live</button>
+              <button class="ghost" onclick="openRepo('https://github.com/gokula017/todo-app.git')">View Repo</button>
+              <button class="ghost" onclick="copyToClipboard('https://todo-app-931h.onrender.com/')">Copy
+                Link</button>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+      <aside class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <div class="small">Role</div>
+            <div style="font-weight:700">React Frontend Developer / MERN Stack Enthusiast</div>
+          </div>
+          <div class="badge">8 yrs</div>
+        </div>
+
+        <div style="margin-top:14px" class="meta">
+          <div class="field">
+            <div class="small">Location</div>
+            <div class="small">Pune, India</div>
+          </div>
+          <div class="field">
+            <div class="small">Email</div>
+            <div class="small"><a class="link" href="mailto:gokula017@gmail.com">gokula017@gmail.com</a></div>
+          </div>
+          <div class="field">
+            <div class="small">GitHub</div>
+            <div class="small"><a class="link" href="https://github.com/gokula017"
+                target="_blank">github.com/gokula017</a></div>
+          </div>
+        </div>
+
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+
+        <div>
+          <h4 style="margin:0 0 8px">Tech Highlights</h4>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">React</span>
+            <span class="tag">Redux Toolkit</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">EJS</span>
+          </div>
+        </div>
+
+        <!-- <div style="margin-top:14px">
+          <button class="btn" onclick="downloadResume()">Download Resume</button>
+          <button class="ghost" onclick="copyPortfolioLink()">Copy Portfolio Link</button>
+        </div> -->
+
+      </aside>
+    </main>
+
+    <footer>
+      Simple portfolio website to hightlight my Projects / Learning - <strong>Gokul Choudhary</strong> .
+      <br />
+      <br />
+      Thank you for a visit.
+    </footer>
+  </div>
+
+  <script>
+    function openLink(url) { if (!url || url.includes('REPLACE_WITH')) { alert('Link not set. Please update the portfolio HTML with your live URL.'); return; } window.open(url, '_blank') }
+    function openRepo(url) { if (!url || url.includes('REPLACE_WITH')) { alert('Repo link not set. Please update the portfolio HTML with your GitHub repo URL.'); return; } window.open(url, '_blank') }
+    function copyToClipboard(text) { navigator.clipboard.writeText(text).then(() => { alert('Link copied to clipboard') }) }
+    function copyPortfolioLink() { navigator.clipboard.writeText(location.href).then(() => alert('Portfolio page URL copied')) }
+    // function downloadResume(){ alert('To enable resume download: replace the downloadResume() function to fetch a real PDF or set a URL in the code.'); }
+  </script>
+</body>
+
+</html>
